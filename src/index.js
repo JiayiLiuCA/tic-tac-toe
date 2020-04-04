@@ -33,6 +33,7 @@ class Board extends React.Component {
     });
   }
   // Add win Logic, remove overwrite
+  // elevate game logic from board to game component to keep simplicity
 
   renderSquare(i) {
     return (
