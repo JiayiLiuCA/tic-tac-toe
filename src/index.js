@@ -32,6 +32,7 @@ class Board extends React.Component {
       xIsNext: !this.state.xIsNext
     });
   }
+  // Add win Logic, remove overwrite
 
   renderSquare(i) {
     return (
