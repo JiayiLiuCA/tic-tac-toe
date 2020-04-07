@@ -83,6 +83,7 @@ class Board extends React.Component {
 }
 
 class Game extends React.Component {
+  //Time travel to be added, logic elevation from board to game component
   render() {
     return (
       <div className="game">
