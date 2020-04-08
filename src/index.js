@@ -68,6 +68,7 @@ class Game extends React.Component {
       squares: Array(9).fill(null)
       }],
       xIsNext: true,
+      //stepNumber: 0,
       winner: null,
     }
   }
@@ -87,9 +88,18 @@ class Game extends React.Component {
       }
       ]),
       xIsNext : !this.state.xIsNext,
+      //stepNumber:
       winner : calculateWinner(squares),
     });
   }
+  /*
+  jumpTo(step) {
+    this.setState ({
+      stepNumber : step,
+      xIsNext: (step % 2) === 0,
+    })
+  }
+  */
 
   render() {
     const history = this.state.history;
